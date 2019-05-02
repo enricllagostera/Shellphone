@@ -4,7 +4,7 @@
 
 ![An early sketch of the shellphone project](https://github.com/enricllagostera/shellphone/blob/master/shellphone-social.png?raw=true)
 
-This is a toy (game?) about letting things take their time. It runs on an Android phone and uses its sensors to focus interactions towards slow processes and question common attention relationships between the phone and player. You can read a detailed [discussion here](https://github.com/enricllagostera/shellphone/wiki/Discussion) of the design ideas behind shellphone, with references and documentation of its creation process.
+This is a game (or a toy?) about letting things take their time. It runs on an Android phone and uses its sensors to focus interactions towards slow processes and question common attention relationships between the phone and player. You can read a detailed [discussion here](https://github.com/enricllagostera/shellphone/wiki/Discussion) of the design ideas behind shellphone, with references and documentation of its creation process.
 
 By publishing shellphone's source code and documentation, my goal is that people interested in creating similar games or toys can access an example, a starting point. It was difficult to find open tools or samples of projects using sensors in an approachable way, so by making this public I might help save some of this effort in the future. The shellphone project contains a few different samples on how to use Android phone sensors (via the amazing [Android Sensors for Unity](https://github.com/mmeiburg/unityAndroidSensors) library) in a game, as well as a few ideas on how to map them into specific interactions.
 
