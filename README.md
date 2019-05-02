@@ -1,8 +1,8 @@
 # shellphone
 
-![An early sketch of the shellphone project](https://raw.githubusercontent.com/enricllagostera/shellphone/master/shellphone-social.png)
-
 > Let the corals grow and feed them with energy and patience.
+
+![An early sketch of the shellphone project](https://raw.githubusercontent.com/enricllagostera/shellphone/master/shellphone-social.png)
 
 This is a toy (game?) about letting things take their time. It runs on an Android phone and uses its sensors to focus interactions towards slow processes and question common attention relationships between the phone and player. You can read a detailed [discussion here](https://github.com/enricllagostera/shellphone/wiki/Discussion) of the design ideas behind shellphone, with references and documentation of its creation process.
 
@@ -34,7 +34,7 @@ If you have ideas for features or bugs you encountered while using the shellphon
 * Documentation is available both at the [wiki](https://github.com/enricllagostera/shellphone/wiki) and on the `Docs` folder.
 * To access the Android phone sensors beyond accelerometers and touchscreen, I have used the [Android Sensors for Unity](https://github.com/mmeiburg/unityAndroidSensors) library.
 * To facilitate the creation of custom inspectors and some test tools, I'm using the [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) library.
-* Vibration control library (you can find it on the [`VibeUtils` folder](teste)) is [based on this code](https://gist.github.com/aVolpe/707c8cf46b1bb8dfb363).
+* Vibration control library (you can find it on the [`VibeUtils` folder](Assets/Shellphone/VibeUtils)) is [based on this code](https://gist.github.com/aVolpe/707c8cf46b1bb8dfb363).
 
 ## Licensing
 
