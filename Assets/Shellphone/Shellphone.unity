@@ -2071,6 +2071,7 @@ MonoBehaviour:
   prefabCoral: {fileID: 4237234922024979635, guid: 01943979d8bbf4a4396d72d46621b382,
     type: 3}
   seaRenderer: {fileID: 447802168}
+  ringAnimator: {fileID: 1559951310}
   health: 1
   isDead: 0
   isCharging: 0

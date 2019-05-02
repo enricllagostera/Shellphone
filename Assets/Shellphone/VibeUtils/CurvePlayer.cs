@@ -52,8 +52,11 @@ namespace VibeUtils
             duration = curve.GetDuration();
             isPlaying = true;
             player.isPlaying = false;
-            _audio.Play();
-            _audio.volume = curve.GetIntensity(timer);
+            if (playAudio)
+            {
+                _audio.Play();
+                _audio.volume = curve.GetIntensity(timer);
+            }
         }
 
         internal void Stop()

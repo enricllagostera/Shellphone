@@ -8,7 +8,6 @@ namespace VibeUtils
 {
     public class VibePlayer : MonoBehaviour
     {
-        public float value;
         public PlayerConfig config;
         public bool isPlaying;
         private float timer;

@@ -16,6 +16,7 @@ namespace Shellphone
         public Coral prefabCoral;
         private float swayIndex;
         public MeshRenderer seaRenderer;
+        public Animator ringAnimator;
 
         [ProgressBar("Health", 1f, ProgressBarColor.Green)] public float health = 1f;
 
@@ -57,11 +58,12 @@ namespace Shellphone
         [Slider(0f, 8f)] public float debugProximity;
         [Slider(0f, 1f)] public float debugBatteryLevel;
         public bool debugCharging;
-
+        private bool justChangedAnimation;
 
         void Start()
         {
             Input.gyro.enabled = true;
+            justChangedAnimation = false;
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
             if (damageDurationFromFXCurve) damageInterval = damageVFX.duration + 0.2f;
         }
@@ -126,6 +128,9 @@ namespace Shellphone
                     health -= damageAmount;
                     damageCooldown = damageInterval;
                     damageVFX.Play();
+                    ringAnimator.SetTrigger("StartBlinking");
+                    ringAnimator.speed = 3f;
+                    StartCoroutine(AnimationChangeDelay());
                 }
             }
             else
@@ -188,6 +193,9 @@ namespace Shellphone
             {
                 warningVFX.Play();
                 print("LET ME GO");
+                ringAnimator.SetTrigger("StartBlinking");
+                ringAnimator.speed = 1f;
+                StartCoroutine(AnimationChangeDelay());
             }
         }
 
@@ -204,12 +212,31 @@ namespace Shellphone
             {
                 // set sleepy
                 moodInfo = sleepyMoodInfo;
+                if (!ringAnimator.GetCurrentAnimatorStateInfo(0).IsName("Halves_Base") && !justChangedAnimation)
+                {
+                    ringAnimator.SetTrigger("StartHalves");
+                    StartCoroutine(AnimationChangeDelay());
+                    ringAnimator.speed = mood * 0.7f;
+                }
             }
             else
             {
                 // set chirpy
                 moodInfo = chirpyMoodInfo;
+                if (!ringAnimator.GetCurrentAnimatorStateInfo(0).IsName("Pulse_Base") && !justChangedAnimation)
+                {
+                    ringAnimator.SetTrigger("StartPulse");
+                    StartCoroutine(AnimationChangeDelay());
+                    ringAnimator.speed = mood;
+                }
             }
+        }
+
+        private IEnumerator AnimationChangeDelay()
+        {
+            justChangedAnimation = true;
+            yield return new WaitForSeconds(2f);
+            justChangedAnimation = false;
         }
 
         public void CreateCoral(Coral parent = null)
