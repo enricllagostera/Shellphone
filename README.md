@@ -14,16 +14,16 @@ The shellphone project was made using the Unity (version 2018.3.12+) game engine
 
 To install, you can download this repository, extract it to your computer and open the folder in Unity. There you can access all scenes and code.
 
-## Video tutorial
-
-Soon.
-
 ## Features
 
 * Watch corals grow and change depending on their environment.
 * Use environmental sensors to suggest slower interaction.
 * Create curve-based vibration feedback in (almost all) Android phones.
 * Project documentation both on the wiki and in the `Docs` folder in the download files.
+
+## Video overview
+
+Soon.
 
 ## Contributing
 
