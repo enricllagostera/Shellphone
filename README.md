@@ -1,4 +1,4 @@
-# shellphone
+# Shellphone
 
 > Let the corals grow and feed them with energy and patience.
 
