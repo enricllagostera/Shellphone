@@ -35,7 +35,3 @@ If you have ideas for features or bugs you encountered while using the shellphon
 * To access the Android phone sensors beyond accelerometers and touchscreen, I have used the [Android Sensors for Unity](https://github.com/mmeiburg/unityAndroidSensors) library.
 * To facilitate the creation of custom inspectors and some test tools, I'm using the [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) library.
 * Vibration control library (you can find it on the [`VibeUtils` folder](Assets/Shellphone/VibeUtils)) is [based on this code](https://gist.github.com/aVolpe/707c8cf46b1bb8dfb363).
-
-## Licensing
-
-This project is licensed under the terms of the LGPL-3.0 (GNU Lesser General Public License v3.0). For more info, please check the license file included.
