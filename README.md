@@ -2,7 +2,7 @@
 
 > Let the corals grow and feed them with energy and patience.
 
-![An early sketch of the shellphone project](https://github.com/enricllagostera/shellphone/blob/master/shellphone-social.png?raw=true)
+![An early sketch of the shellphone project](https://github.com/enricllagostera/Shellphone/blob/main/shellphone-social.png?raw=true)
 
 This is a game (or a toy?) about letting things take their time. It runs on an Android phone and uses its sensors to focus interactions towards slow processes and question common attention relationships between the phone and player. You can read a detailed [discussion here](https://github.com/enricllagostera/shellphone/wiki/Discussion) of the design ideas behind shellphone, with references and documentation of its creation process.
 
